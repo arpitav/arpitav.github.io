@@ -200,35 +200,15 @@
 </Modal>
 
 <Modal bind:visible={showStats}>
-	{#if modeData.modes[$mode].historical}
-		<h2 class="historical">Statistics not available for historical games</h2>
-	{:else}
-		<Statistics data={stats} />
-		<Distribution distribution={stats.guesses} {game} />
-	{/if}
-	<Separator visible={!game.active}>
-		<Timer
-			slot="1"
-			bind:this={timer}
-			on:timeup={() => (showRefresh = true)}
-			on:reload={reload}
-		/>
-		<Share slot="2" state={game} />
-	</Separator>
-	<ShareGame wordNumber={game.wordNumber} />
-	{#if !game.active}
-		<Definition {word} alternates={2} />
-	{:else}
-		<!-- Fade with delay is to prevent a bright red button from appearing as soon as refresh is pressed -->
-		<div
-			in:fade={{ delay: 300 }}
-			class="button concede"
-			on:click={concede}
-			on:keydown={concede}
-		>
-			give up
-		</div>
-	{/if}
+	<h2>Arpita</h2>
+		<em>(n. noun)</em>
+		<ol>
+			
+			<li>variant of Saloni.</li>
+			
+			<li>A soft breeze</li>
+		
+		</ol>
 </Modal>
 
 <Modal fullscreen={true} bind:visible={showSettings}>
