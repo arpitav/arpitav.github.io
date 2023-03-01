@@ -1,6 +1,6 @@
 const words = {
 	"words": [
-    "Arpita"
+    "arpita"
     ]
 };
 export default words;
