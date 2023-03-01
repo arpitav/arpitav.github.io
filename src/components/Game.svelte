@@ -200,15 +200,17 @@
 </Modal>
 
 <Modal bind:visible={showStats}>
-	<h2>Arpita</h2>
+	<div class="def">
+		<h2>Arpita</h2>
 		<em>(n. noun)</em>
 		<ol>
 			
-			<li>variant of Saloni.</li>
+			<li>Variant of Saloni.</li>
 			
 			<li>A soft breeze</li>
 		
 		</ol>
+	</div>
 </Modal>
 
 <Modal fullscreen={true} bind:visible={showSettings}>
